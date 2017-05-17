@@ -1,0 +1,56 @@
+@import './../../settings.styl';
+
+$iconPos = -12.5%
+$hoverMargin = -30px
+$imgHeight = 180px
+$cardWidth = 190px
+
+.card
+    max-width: $cardWidth
+    padding: 10px
+    position: relative
+    background-color: $background-color-card
+    cursor: pointer // Assume it's be a link
+    .wrapper
+        width: 100%
+        height: 100%
+        position: relative
+        overflow: hidden
+    .images
+        position: relative
+        background-position: center
+        background-size: cover
+        margin-bottom: 50px
+        width: 100%
+        height: $imgHeight
+    .details
+        font-size: 12px
+        background-color: #fff
+        max-width: $cardWidth
+        min-width: 100%
+        width: 100%
+        padding-top: 30px
+        transition: all 500ms ease-out
+        position: absolute
+        margin-bottom: -30px
+        bottom: 0
+        .icon
+            position: absolute
+            top: -25px
+            left: 5%
+            width: 48px
+            height: 48px
+            display: flex
+            align-items: center
+            img
+                width: 100%
+        .name
+            font-weight: 700
+            font-size: 16px
+        .title
+            min-height: 35px
+    &.hover
+        .details
+            margin-bottom: 0
+        .extraDetails
+            display: block

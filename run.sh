@@ -1,0 +1,1 @@
+docker build -t alex . && docker run -d -p 8080:1212 alex
